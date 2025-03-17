@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details - CarNook</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header scrolled">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-car"></i>
+                        <span>CarNook</span>
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html" class="active">Cars</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="search.html" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="login.html" class="btn btn-primary">
+                        <i class="fas fa-user"></i>
+                        <span>Sign In</span>
+                    </a>
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Car Details Section -->
+    <section class="car-details-page">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="cars.html">Cars</a>
+                <span>/</span>
+                <span class="current-page">Tesla Model 3</span>
+            </div>
+            
+            <div class="car-details-grid">
+                <div class="car-details-gallery">
+                    <div class="main-image">
+                        <img id="main-car-image" src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Tesla Model 3">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <div class="thumbnail active" data-img="https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80">
+                            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Tesla Model 3 Exterior">
+                        </div>
+                        <div class="thumbnail" data-img="https://images.unsplash.com/photo-1554744512-d6c603f27c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                            <img src="https://images.unsplash.com/photo-1554744512-d6c603f27c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Tesla Model 3 Interior">
+                        </div>
+                        <div class="thumbnail" data-img="https://images.unsplash.com/photo-1553260168-69b041873e53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                            <img src="https://images.unsplash.com/photo-1553260168-69b041873e53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Tesla Model 3 Dashboard">
+                        </div>
+                        <div class="thumbnail" data-img="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Tesla Model 3 Rear">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="car-details-info">
+                    <div class="car-tag">Electric</div>
+                    <h1>Tesla Model 3</h1>
+                    <div class="car-meta">
+                        <div class="car-brand">
+                            <i class="fas fa-car"></i>
+                            <span>Tesla</span>
+                        </div>
+                        <div class="car-year">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2023</span>
+                        </div>
+                        <div class="car-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (124 reviews)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="car-price-details">
+                        <div class="price-box">
+                            <span class="price-label">Rental Price</span>
+                            <span class="price-amount">$110</span>
+                            <span class="price-period">/day</span>
+                        </div>
+                        <div class="price-discount">
+                            <i class="fas fa-tags"></i>
+                            <span>10% discount for 7+ day rentals</span>
+                        </div>
+                    </div>
+                    
+                    <div class="car-description">
+                        <h3>About This Car</h3>
+                        <p>
+                            Experience the future of driving with the Tesla Model 3. This all-electric sedan combines
+                            cutting-edge technology, impressive range, and exhilarating performance in a sleek,
+                            minimalist package. With zero emissions and instant torque, the Model 3 offers a
+                            smooth, quiet ride that redefines the driving experience.
+                        </p>
+                        <p>
+                            The spacious interior features a panoramic glass roof and a 15-inch touchscreen that
+                            controls everything from navigation to entertainment. With regular software updates,
+                            your Model 3 keeps getting better over time.
+                        </p>
+                    </div>
+                    
+                    <div class="car-features-list">
+                        <h3>Key Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-battery-full"></i>
+                                <div>
+                                    <h4>Range</h4>
+                                    <p>358 miles</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <div>
+                                    <h4>Top Speed</h4>
+                                    <p>145 mph</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-bolt"></i>
+                                <div>
+                                    <h4>Acceleration</h4>
+                                    <p>0-60 mph in 4.2s</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-suitcase"></i>
+                                <div>
+                                    <h4>Luggage</h4>
+                                    <p>23 cu ft</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Seats</h4>
+                                    <p>5 Adults</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-cog"></i>
+                                <div>
+                                    <h4>Transmission</h4>
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="car-amenities">
+                        <h3>Amenities</h3>
+                        <div class="amenities-grid">
+                            <div class="amenity"><i class="fas fa-check"></i> Autopilot</div>
+                            <div class="amenity"><i class="fas fa-check"></i> 360° Cameras</div>
+                            <div class="amenity"><i class="fas fa-check"></i> Premium Sound System</div>
+                            <div class="amenity"><i class="fas fa-check"></i> Heated Seats</div>
+                            <div class="amenity"><i class="fas fa-check"></i> Wireless Phone Charging</div>
+                            <div class="amenity"><i class="fas fa-check"></i> Navigation</div>
+                            <div class="amenity"><i class="fas fa-check"></i> Bluetooth</div>
+                            <div class="amenity"><i class="fas fa-check"></i> Panoramic Glass Roof</div>
+                            <div class="amenity"><i class="fas fa-check"></i> Keyless Entry</div>
+                            <div class="amenity"><i class="fas fa-check"></i> Climate Control</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-section">
+                <h2>Book This Car</h2>
+                <form id="booking-form" class="booking-form">
+                    <div class="booking-grid">
+                        <div class="booking-fields">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pickup-date">Pick-up Date</label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-calendar"></i>
+                                        <input type="date" id="pickup-date" name="pickup-date" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="return-date">Return Date</label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-calendar"></i>
+                                        <input type="date" id="return-date" name="return-date" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pickup-location">Pick-up Location</label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <select id="pickup-location" name="pickup-location" required>
+                                            <option value="">Select Location</option>
+                                            <option value="new-york">New York City</option>
+                                            <option value="los-angeles">Los Angeles</option>
+                                            <option value="chicago">Chicago</option>
+                                            <option value="miami">Miami</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="return-location">Return Location</label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <select id="return-location" name="return-location" required>
+                                            <option value="">Select Location</option>
+                                            <option value="new-york">New York City</option>
+                                            <option value="los-angeles">Los Angeles</option>
+                                            <option value="chicago">Chicago</option>
+                                            <option value="miami">Miami</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="drivers-age">Driver's Age</label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-id-card"></i>
+                                        <select id="drivers-age" name="drivers-age" required>
+                                            <option value="">Select Age Range</option>
+                                            <option value="21-24">21-24</option>
+                                            <option value="25-70">25-70</option>
+                                            <option value="70+">70+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="extras">Add-ons</label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <select id="extras" name="extras">
+                                            <option value="">Select Add-ons</option>
+                                            <option value="gps">GPS Navigation ($5/day)</option>
+                                            <option value="child-seat">Child Seat ($10/day)</option>
+                                            <option value="additional-driver">Additional Driver ($15/day)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-summary">
+                            <h3>Rental Summary</h3>
+                            <div class="summary-item">
+                                <span class="summary-label">Base Rate:</span>
+                                <span class="summary-value">$110 x <span id="days-count">0</span> days</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Add-ons:</span>
+                                <span class="summary-value" id="addons-total">$0</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Taxes & Fees:</span>
+                                <span class="summary-value" id="taxes-fees">$0</span>
+                            </div>
+                            <div class="summary-total">
+                                <span class="summary-label">Total:</span>
+                                <span class="summary-value" id="rental-total">$0</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Reserve Now</span>
+                            </button>
+                            
+                            <div class="booking-note">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Free cancellation up to 48 hours before pickup</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="similar-cars">
+                <h2>Similar Cars You Might Like</h2>
+                <div class="cars-grid">
+                    <!-- Similar Car 1 -->
+                    <div class="car-card">
+                        <div class="car-image">
+                            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80" alt="Tesla Model Y">
+                            <div class="car-tag">Electric</div>
+                        </div>
+                        <div class="car-details">
+                            <div class="car-header">
+                                <div>
+                                    <h3>Tesla Model Y</h3>
+                                    <div class="car-subinfo">
+                                        <span>Tesla</span>
+                                        <span class="dot">•</span>
+                                        <span>2023</span>
+                                    </div>
+                                </div>
+                                <div class="car-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                    <span class="reviews">(87)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="car-footer">
+                                <div class="car-price">
+                                    <span class="price">$130</span>
+                                    <span class="period">/day</span>
+                                </div>
+                                <a href="car-details.html?id=car2" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Similar Car 2 -->
+                    <div class="car-card">
+                        <div class="car-image">
+                            <img src="https://images.unsplash.com/photo-1630990325204-3b586e8083ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Polestar 2">
+                            <div class="car-tag">Electric</div>
+                        </div>
+                        <div class="car-details">
+                            <div class="car-header">
+                                <div>
+                                    <h3>Polestar 2</h3>
+                                    <div class="car-subinfo">
+                                        <span>Polestar</span>
+                                        <span class="dot">•</span>
+                                        <span>2023</span>
+                                    </div>
+                                </div>
+                                <div class="car-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                    <span class="reviews">(52)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="car-footer">
+                                <div class="car-price">
+                                    <span class="price">$120</span>
+                                    <span class="period">/day</span>
+                                </div>
+                                <a href="car-details.html?id=car3" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Similar Car 3 -->
+                    <div class="car-card">
+                        <div class="car-image">
+                            <img src="https://images.unsplash.com/photo-1623335087782-327321301435?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="Audi e-tron">
+                            <div class="car-tag">Electric</div>
+                        </div>
+                        <div class="car-details">
+                            <div class="car-header">
+                                <div>
+                                    <h3>Audi e-tron</h3>
+                                    <div class="car-subinfo">
+                                        <span>Audi</span>
+                                        <span class="dot">•</span>
+                                        <span>2023</span>
+                                    </div>
+                                </div>
+                                <div class="car-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                    <span class="reviews">(41)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="car-footer">
+                                <div class="car-price">
+                                    <span class="price">$140</span>
+                                    <span class="period">/day</span>
+                                </div>
+                                <a href="car-details.html?id=car4" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>CarNook</span>
+                    </div>
+                    <p>
+                        Premium car rental service with a focus on quality, comfort, and customer satisfaction.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Car Rental</a></li>
+                        <li><a href="services.html">Chauffeur Services</a></li>
+                        <li><a href="services.html">Airport Transfers</a></li>
+                        <li><a href="services.html">Corporate Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Car Street, Auto City, FL 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@carnook.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> CarNook. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Car details page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Image gallery functionality
+            const mainImage = document.getElementById('main-car-image');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    // Update main image
+                    mainImage.src = this.getAttribute('data-img');
+                    
+                    // Update active thumbnail
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            
+            // Booking form calculations
+            const pickupDateInput = document.getElementById('pickup-date');
+            const returnDateInput = document.getElementById('return-date');
+            const daysCountElement = document.getElementById('days-count');
+            const addonsTotalElement = document.getElementById('addons-total');
+            const taxesFeesElement = document.getElementById('taxes-fees');
+            const rentalTotalElement = document.getElementById('rental-total');
+            const extrasSelect = document.getElementById('extras');
+            const bookingForm = document.getElementById('booking-form');
+            
+            // Set min date for datepickers to today
+            const today = new Date();
+            const todayFormatted = today.toISOString().split('T')[0];
+            pickupDateInput.setAttribute('min', todayFormatted);
+            returnDateInput.setAttribute('min', todayFormatted);
+            
+            function calculateRental() {
+                if (pickupDateInput.value && returnDateInput.value) {
+                    const pickupDate = new Date(pickupDateInput.value);
+                    const returnDate = new Date(returnDateInput.value);
+                    
+                    // Calculate days difference
+                    const timeDiff = returnDate.getTime() - pickupDate.getTime();
+                    const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                    
+                    if (daysDiff >= 0) {
+                        // Update days count
+                        daysCountElement.textContent = daysDiff;
+                        
+                        // Calculate base price
+                        let basePrice = 110 * daysDiff;
+                        
+                        // Apply discount for 7+ days
+                        if (daysDiff >= 7) {
+                            basePrice = basePrice * 0.9; // 10% discount
+                        }
+                        
+                        // Calculate addon price
+                        let addonPrice = 0;
+                        if (extrasSelect.value === 'gps') {
+                            addonPrice = 5 * daysDiff;
+                        } else if (extrasSelect.value === 'child-seat') {
+                            addonPrice = 10 * daysDiff;
+                        } else if (extrasSelect.value === 'additional-driver') {
+                            addonPrice = 15 * daysDiff;
+                        }
+                        
+                        // Calculate taxes (assumed 10%)
+                        const taxesFees = (basePrice + addonPrice) * 0.1;
+                        
+                        // Update display elements
+                        addonsTotalElement.textContent = '$' + addonPrice.toFixed(2);
+                        taxesFeesElement.textContent = '$' + taxesFees.toFixed(2);
+                        rentalTotalElement.textContent = '$' + (basePrice + addonPrice + taxesFees).toFixed(2);
+                    }
+                }
+            }
+            
+            // Handle date changes
+            pickupDateInput.addEventListener('change', function() {
+                returnDateInput.setAttribute('min', this.value);
+                
+                // If return date is before new pickup date, update it
+                if (returnDateInput.value && returnDateInput.value < this.value) {
+                    returnDateInput.value = this.value;
+                }
+                
+                calculateRental();
+            });
+            
+            returnDateInput.addEventListener('change', calculateRental);
+            extrasSelect.addEventListener('change', calculateRental);
+            
+            // Form submission
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real implementation, you would send the booking data to a server
+                    // For demonstration, we'll just show an alert
+                    alert('Thank you for your booking! Your rental has been confirmed.');
+                });
+            }
+            
+            // Set the car details based on URL parameter (in a real app)
+            // Here we'll just hardcode Tesla Model 3 for demonstration
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars - CarNook</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header scrolled">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-car"></i>
+                        <span>CarNook</span>
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html" class="active">Cars</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="search.html" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="login.html" class="btn btn-primary">
+                        <i class="fas fa-user"></i>
+                        <span>Sign In</span>
+                    </a>
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Premium Fleet</h1>
+            <p>Discover our selection of high-quality vehicles for your next journey.</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <h2>Find Your Perfect Car</h2>
+                <form id="filter-form" class="filter-form">
+                    <div class="filter-grid">
+                        <div class="filter-item">
+                            <label for="car-type">Vehicle Type</label>
+                            <select id="car-type" name="car-type">
+                                <option value="">All Types</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="luxury">Luxury</option>
+                                <option value="electric">Electric</option>
+                                <option value="sports">Sports</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-item">
+                            <label for="brand">Brand</label>
+                            <select id="brand" name="brand">
+                                <option value="">All Brands</option>
+                                <option value="bmw">BMW</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                                <option value="tesla">Tesla</option>
+                                <option value="toyota">Toyota</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-item">
+                            <label for="price-range">Price Range</label>
+                            <select id="price-range" name="price-range">
+                                <option value="">Any Price</option>
+                                <option value="0-100">$0 - $100/day</option>
+                                <option value="100-200">$100 - $200/day</option>
+                                <option value="200-300">$200 - $300/day</option>
+                                <option value="300+">$300+/day</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-item">
+                            <label for="features">Features</label>
+                            <select id="features" name="features">
+                                <option value="">All Features</option>
+                                <option value="gps">GPS Navigation</option>
+                                <option value="bluetooth">Bluetooth</option>
+                                <option value="sunroof">Sunroof</option>
+                                <option value="autopilot">Autopilot</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-item filter-button">
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-filter"></i>
+                                <span>Apply Filters</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Grid Section -->
+    <section class="cars-page">
+        <div class="container">
+            <div class="cars-grid">
+                <!-- Car 1 -->
+                <div class="car-card" data-type="electric" data-brand="tesla" data-price="110">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Tesla Model 3">
+                        <div class="car-tag">Electric</div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <div>
+                                <h3>Tesla Model 3</h3>
+                                <div class="car-subinfo">
+                                    <span>Tesla</span>
+                                    <span class="dot">•</span>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="car-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                                <span class="reviews">(124)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>5 Seats</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cog"></i>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Electric</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-calendar-day"></i>
+                                <span>Free Cancellation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-extras">
+                            <h4>Key Features</h4>
+                            <div class="extras-grid">
+                                <div class="extra"><i class="fas fa-check"></i> Autopilot</div>
+                                <div class="extra"><i class="fas fa-check"></i> 360° Cameras</div>
+                                <div class="extra"><i class="fas fa-check"></i> Leather Seats</div>
+                                <div class="extra"><i class="fas fa-check"></i> Wireless Charging</div>
+                            </div>
+                        </div>
+                        
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price">$110</span>
+                                <span class="period">/day</span>
+                            </div>
+                            <a href="car-details.html?id=car1" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 2 -->
+                <div class="car-card" data-type="suv" data-brand="bmw" data-price="150">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1698516856617-41e48687dc18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80" alt="BMW X5">
+                        <div class="car-tag">SUV</div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <div>
+                                <h3>BMW X5</h3>
+                                <div class="car-subinfo">
+                                    <span>BMW</span>
+                                    <span class="dot">•</span>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                            <div class="car-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                                <span class="reviews">(98)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>7 Seats</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cog"></i>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Gasoline</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-calendar-day"></i>
+                                <span>Free Cancellation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-extras">
+                            <h4>Key Features</h4>
+                            <div class="extras-grid">
+                                <div class="extra"><i class="fas fa-check"></i> Panoramic Sunroof</div>
+                                <div class="extra"><i class="fas fa-check"></i> Heated Seats</div>
+                                <div class="extra"><i class="fas fa-check"></i> Head-up Display</div>
+                                <div class="extra"><i class="fas fa-check"></i> Navigation</div>
+                            </div>
+                        </div>
+                        
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price">$150</span>
+                                <span class="period">/day</span>
+                            </div>
+                            <a href="car-details.html?id=car2" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 3 -->
+                <div class="car-card" data-type="luxury" data-brand="mercedes" data-price="200">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1622037022022-2dc7d07c768f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Mercedes S-Class">
+                        <div class="car-tag">Luxury</div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <div>
+                                <h3>Mercedes S-Class</h3>
+                                <div class="car-subinfo">
+                                    <span>Mercedes</span>
+                                    <span class="dot">•</span>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="car-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                                <span class="reviews">(76)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>5 Seats</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cog"></i>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Hybrid</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-calendar-day"></i>
+                                <span>Free Cancellation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-extras">
+                            <h4>Key Features</h4>
+                            <div class="extras-grid">
+                                <div class="extra"><i class="fas fa-check"></i> Massage Seats</div>
+                                <div class="extra"><i class="fas fa-check"></i> MBUX System</div>
+                                <div class="extra"><i class="fas fa-check"></i> Burmester Sound</div>
+                                <div class="extra"><i class="fas fa-check"></i> Air Suspension</div>
+                            </div>
+                        </div>
+                        
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price">$200</span>
+                                <span class="period">/day</span>
+                            </div>
+                            <a href="car-details.html?id=car3" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 4 -->
+                <div class="car-card" data-type="sports" data-brand="audi" data-price="250">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Audi R8">
+                        <div class="car-tag">Sports</div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <div>
+                                <h3>Audi R8</h3>
+                                <div class="car-subinfo">
+                                    <span>Audi</span>
+                                    <span class="dot">•</span>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                            <div class="car-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                                <span class="reviews">(58)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>2 Seats</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cog"></i>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Gasoline</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-calendar-day"></i>
+                                <span>Free Cancellation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-extras">
+                            <h4>Key Features</h4>
+                            <div class="extras-grid">
+                                <div class="extra"><i class="fas fa-check"></i> Sport Mode</div>
+                                <div class="extra"><i class="fas fa-check"></i> Carbon Fiber Interior</div>
+                                <div class="extra"><i class="fas fa-check"></i> Bang & Olufsen Sound</div>
+                                <div class="extra"><i class="fas fa-check"></i> Launch Control</div>
+                            </div>
+                        </div>
+                        
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price">$250</span>
+                                <span class="period">/day</span>
+                            </div>
+                            <a href="car-details.html?id=car4" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 5 -->
+                <div class="car-card" data-type="sedan" data-brand="toyota" data-price="80">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" alt="Toyota Camry">
+                        <div class="car-tag">Sedan</div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <div>
+                                <h3>Toyota Camry</h3>
+                                <div class="car-subinfo">
+                                    <span>Toyota</span>
+                                    <span class="dot">•</span>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="car-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                                <span class="reviews">(112)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>5 Seats</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cog"></i>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Hybrid</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-calendar-day"></i>
+                                <span>Free Cancellation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-extras">
+                            <h4>Key Features</h4>
+                            <div class="extras-grid">
+                                <div class="extra"><i class="fas fa-check"></i> Apple CarPlay</div>
+                                <div class="extra"><i class="fas fa-check"></i> Android Auto</div>
+                                <div class="extra"><i class="fas fa-check"></i> Backup Camera</div>
+                                <div class="extra"><i class="fas fa-check"></i> Lane Assist</div>
+                            </div>
+                        </div>
+                        
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price">$80</span>
+                                <span class="period">/day</span>
+                            </div>
+                            <a href="car-details.html?id=car5" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 6 -->
+                <div class="car-card" data-type="electric" data-brand="tesla" data-price="130">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80" alt="Tesla Model Y">
+                        <div class="car-tag">Electric</div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <div>
+                                <h3>Tesla Model Y</h3>
+                                <div class="car-subinfo">
+                                    <span>Tesla</span>
+                                    <span class="dot">•</span>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                            <div class="car-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                                <span class="reviews">(87)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>5 Seats</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cog"></i>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Electric</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-calendar-day"></i>
+                                <span>Free Cancellation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-extras">
+                            <h4>Key Features</h4>
+                            <div class="extras-grid">
+                                <div class="extra"><i class="fas fa-check"></i> Autopilot</div>
+                                <div class="extra"><i class="fas fa-check"></i> Glass Roof</div>
+                                <div class="extra"><i class="fas fa-check"></i> Wireless Charging</div>
+                                <div class="extra"><i class="fas fa-check"></i> Dog Mode</div>
+                            </div>
+                        </div>
+                        
+                        <div class="car-footer">
+                            <div class="car-price">
+                                <span class="price">$130</span>
+                                <span class="period">/day</span>
+                            </div>
+                            <a href="car-details.html?id=car6" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="pagination-item active">1</a>
+                <a href="#" class="pagination-item">2</a>
+                <a href="#" class="pagination-item">3</a>
+                <a href="#" class="pagination-item next">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>CarNook</span>
+                    </div>
+                    <p>
+                        Premium car rental service with a focus on quality, comfort, and customer satisfaction.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Cars</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Car Rental</a></li>
+                        <li><a href="services.html">Chauffeur Services</a></li>
+                        <li><a href="services.html">Airport Transfers</a></li>
+                        <li><a href="services.html">Corporate Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Car Street, Auto City, FL 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@carnook.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> CarNook. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Cars page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterForm = document.getElementById('filter-form');
+            const carCards = document.querySelectorAll('.car-card');
+            
+            if (filterForm) {
+                filterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const typeFilter = document.getElementById('car-type').value;
+                    const brandFilter = document.getElementById('brand').value;
+                    const priceFilter = document.getElementById('price-range').value;
+                    
+                    carCards.forEach(card => {
+                        let showCard = true;
+                        
+                        // Filter by type
+                        if (typeFilter && card.getAttribute('data-type') !== typeFilter) {
+                            showCard = false;
+                        }
+                        
+                        // Filter by brand
+                        if (brandFilter && card.getAttribute('data-brand') !== brandFilter) {
+                            showCard = false;
+                        }
+                        
+                        // Filter by price range
+                        if (priceFilter) {
+                            const price = parseInt(card.getAttribute('data-price'));
+                            
+                            if (priceFilter === '0-100' && (price < 0 || price > 100)) {
+                                showCard = false;
+                            } else if (priceFilter === '100-200' && (price < 100 || price > 200)) {
+                                showCard = false;
+                            } else if (priceFilter === '200-300' && (price < 200 || price > 300)) {
+                                showCard = false;
+                            } else if (priceFilter === '300+' && price < 300) {
+                                showCard = false;
+                            }
+                        }
+                        
+                        // Show or hide card
+                        if (showCard) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+            
+            // Pagination (for demonstration)
+            const paginationItems = document.querySelectorAll('.pagination-item');
+            
+            paginationItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all items
+                    paginationItems.forEach(i => i.classList.remove('active'));
+                    
+                    // Add active class to clicked item
+                    this.classList.add('active');
+                    
+                    // In a real implementation, this would load the next page of cars
+                    // For demonstration, we'll just scroll to top
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
